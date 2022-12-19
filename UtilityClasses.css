@@ -248,6 +248,12 @@ a.no-underline:focus {
   min-width: max-content;
 }
 
+.height-fit-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .width-fit-content {
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
