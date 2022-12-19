@@ -2,15 +2,18 @@
 /*! Root - CSS Variables                                                        */
 /*! =========================================================================== */
 :root {
+  /*! Typography - Size */
+  --font-size-base-l: 18px;
+
+  /* Space - Sizes */
+  --space-base-s: 12px;
+
   /* Border Radius */
   --border-radius-softer: 8px;
   --border-radius-softest: 10px;
 
   /* Typography - Weight */
   --font-medium: 500;
-
-  /* Space - Sizes */
-  --space-base-s: 12px;
 }
 
 /*! Styles - Typography - Weight */
@@ -174,6 +177,12 @@ a.no-underline:focus {
   padding-right: var(--space-base-s);
 }
 
+/*! Usefull - Shadow */
+.shadow-none {
+  -webkit-box-shadow: var(--shadow-none) !important;
+  box-shadow: var(--shadow-none) !important;
+}
+
 /* Checkbox lookalike radio button */
 .tablet [data-checkbox].checkbox-radio-alike:before,
 .phone [data-checkbox].checkbox-radio-alike:before {
@@ -220,6 +229,11 @@ a.no-underline:focus {
 }
 
 /*! Usefull Classes - General */
+
+.font-size-base-l {
+  font-size: var(--font-size-base-l);
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -228,10 +242,16 @@ a.no-underline:focus {
   word-break: keep-all;
 }
 
-.width-max-content {
+.min-width-max-content {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.width-fit-content {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 
 .overflow-unset {
@@ -248,4 +268,32 @@ a.no-underline:focus {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.aspect-ratio--equal {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-ratio--2-by-1 {
+  aspect-ratio: 2 / 1;
+}
+
+/* Limit to 2 lines of text */
+.overflow-2-lines {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Service Studio */
+.servicestudio-full-height {
+  -servicestudio-height: 100%;
 }
