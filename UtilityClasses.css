@@ -1,0 +1,251 @@
+/*! =========================================================================== */
+/*! Root - CSS Variables                                                        */
+/*! =========================================================================== */
+:root {
+  /* Border Radius */
+  --border-radius-softer: 8px;
+  --border-radius-softest: 10px;
+
+  /* Typography - Weight */
+  --font-medium: 500;
+
+  /* Space - Sizes */
+  --space-base-s: 12px;
+}
+
+/*! Styles - Typography - Weight */
+.font-medium {
+  font-weight: var(--font-medium);
+}
+
+/*! Styles - Typography - Line Height */
+.line-height-1 {
+  line-height: 1;
+}
+
+/*! Styles - Typography - Styling */
+.text-underline {
+  text-decoration: underline;
+}
+
+.no-underline,
+a.no-underline:hover,
+a.no-underline:focus {
+  text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Table */
+.table-layout--fixed {
+  table-layout: fixed;
+}
+
+/* Content */
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.fit-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* Flexbox */
+.display-inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.gap-xs {
+  gap: var(--space-xs);
+}
+
+.gap-s {
+  gap: var(--space-s);
+}
+
+.gap-base {
+  gap: var(--space-base);
+}
+
+/* Grid */
+.display-grid {
+  display: grid;
+}
+
+.grid-columns--2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: var(--space-m);
+}
+
+.grid-columns--3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: var(--space-m);
+}
+
+.grid-columns--4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: var(--space-m);
+}
+
+/*! Custom Margins & Paddings */
+
+/* $6.3.11 - Styles - Space - Margin */
+.margin-base-s {
+  margin: var(--space-base-s);
+}
+.margin-bottom-base-s {
+  margin-bottom: var(--space-base-s);
+}
+.margin-left-base-s {
+  margin-left: var(--space-base-s);
+}
+.margin-top-base-s {
+  margin-top: var(--space-base-s);
+}
+.margin-right-base-s {
+  margin-right: var(--space-base-s);
+}
+
+/* $6.3.11 - Styles - Space - Padding */
+.padding-base-s {
+  margin: var(--space-base-s);
+}
+.padding-bottom-base-s {
+  padding-bottom: var(--space-base-s);
+}
+.padding-left-base-s {
+  padding-left: var(--space-base-s);
+}
+.padding-top-base-s {
+  padding-top: var(--space-base-s);
+}
+.padding-right-base-s {
+  padding-right: var(--space-base-s);
+}
+
+/* Checkbox lookalike radio button */
+.tablet [data-checkbox].checkbox-radio-alike:before,
+.phone [data-checkbox].checkbox-radio-alike:before {
+  border-radius: var(--border-radius-circle);
+}
+
+[data-checkbox].checkbox-radio-alike:checked:after {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: var(--color-neutral-0);
+  border-radius: 100%;
+  content: "";
+  height: 12px;
+  left: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  border: 0;
+}
+
+.has-accessible-features [data-checkbox].checkbox-radio-alike {
+  border-radius: var(--border-radius-circle);
+}
+
+/*! Usefull Classes - Overflow */
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.overflow-visible {
+  overflow: visible !important;
+}
+
+.overflow-horizontal {
+  overflow-x: auto !important;
+}
+
+.overflow-vertical {
+  overflow-y: auto !important;
+}
+
+/*! Usefull Classes - General */
+.text-align-center {
+  text-align: center;
+}
+
+.keep-all {
+  word-break: keep-all;
+}
+
+.width-max-content {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.overflow-unset {
+  overflow: unset !important;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
