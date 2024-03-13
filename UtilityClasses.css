@@ -308,3 +308,8 @@ a.no-underline:focus {
 .servicestudio-full-height {
   -servicestudio-height: 100%;
 }
+
+/* Hides when two empty containers are followed */
+.ph:has(> .ph:empty):not(:has( > div:not(:empty))) {
+    display: none;
+}
