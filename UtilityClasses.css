@@ -313,3 +313,27 @@ a.no-underline:focus {
 .ph:has(> .ph:empty):not(:has( > div:not(:empty))) {
     display: none;
 }
+
+/* Pretty scrollabar */
+:root {
+    /*! App Settings */
+    --scrollbar-width: 8px;
+    --scrollbar-height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background-color: #e4e3e3;
+  border-radius: var(--border-radius-soft);
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-height);
+  background-color: #e4e3e3;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: var(--border-radius-soft);
+  background-color: var(--color-primary);
+}
